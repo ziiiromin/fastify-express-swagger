@@ -4,7 +4,7 @@ const fs = require("fs");
 const path = require("path");
 const basename = path.basename(__filename);
 const Sequelize = require("sequelize");
-const config = require(__dirname + "/../config/db.config.ts")["local"]; //[env]
+const config = require(__dirname + "/../config/db.config.js")["local"]; //[env]
 const db: any = {};
 
 let sequelize: any;
